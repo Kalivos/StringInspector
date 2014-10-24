@@ -11,6 +11,7 @@ namespace StringInspector
         private StringBuilder _text;
         private Dictionary<Char, int> _characterCounts;
         private Char _mostUsed;
+        private bool _ignoreWhitespace = true;
 
         /// <summary>
         /// Class for determining which character occurs the most often in a string. 
@@ -50,12 +51,26 @@ namespace StringInspector
                 }
                 else
                 {
-                    //First time seeing this character, lets add it
-                    _characterCounts.Add(c, 1);
+                     //First time seeing this character
+
+
+                    if(_ignoreWhitespace)
+                    {
+                        if(!String.IsNullOrWhiteSpace(c.ToString()))
+                        {
+                            //lets add it as long as it isn't whitespace
+                            _characterCounts.Add(c, 1);
+                        }
+                    }
+                    else
+                    {
+                        _characterCounts.Add(c, 1);
+                    }
+
                 }
 
                 //Check if the current character is now the most common
-                if (_mostUsed == '\0' || _characterCounts[c] > _characterCounts[_mostUsed])
+                if (_mostUsed == '\0' || (_characterCounts.ContainsKey(c) && _characterCounts[c] > _characterCounts[_mostUsed]))
                     _mostUsed = c;
             }
 
