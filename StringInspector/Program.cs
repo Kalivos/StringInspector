@@ -12,7 +12,8 @@ namespace StringInspector
         {
             Console.OutputEncoding = Encoding.Unicode;
 
-            ArticleFromList article = new ArticleFromList();
+            //ArticleFromList article = new ArticleFromList();
+            ArticleFromFile article = new ArticleFromFile("./SampleArticles");
 
             Inspector inspect = null;
             string next = article.GetNextArticle();
