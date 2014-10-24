@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringInspector", "StringInspector\StringInspector.csproj", "{713946C2-B4C0-49E6-8C27-817CEB3EF406}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringInspectorTests", "StringInspectorTests\StringInspectorTests.csproj", "{71C064FA-F77A-4521-82B3-1CB13EFFF31F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{713946C2-B4C0-49E6-8C27-817CEB3EF406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{713946C2-B4C0-49E6-8C27-817CEB3EF406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{713946C2-B4C0-49E6-8C27-817CEB3EF406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C064FA-F77A-4521-82B3-1CB13EFFF31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C064FA-F77A-4521-82B3-1CB13EFFF31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C064FA-F77A-4521-82B3-1CB13EFFF31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C064FA-F77A-4521-82B3-1CB13EFFF31F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
