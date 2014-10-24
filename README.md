@@ -16,7 +16,7 @@ Efficiency - Is it more efficient to sort the list while counting characters vs 
 Running the executable will search through all ".txt" files in the SampleArticles folder. It will parse the articles text and display the most commonly used character. NOTE: To make things a little more interesting, whitespace is ignored and not calculated as a character. If whitespace is not ignored, a space will always be the most used character. If whitespace is desired, the boolean "_ignoreWhitespace" in the the Inspector class can be set to false.
 
 ####Modifying source input
-It is possible to change which articles are being fed into the program. The easiest was to do this is to create a class which impliments IArticleRetrieval. ArticleFromFile.cs & ArticleFromList.cs are both examples of retrieving article text. Once the class has been created, simply replace "ArticleFromFile" with the newly created class name.
+It is possible to change which articles are being fed into the program. The easiest was to do this is to create a class which impliments IArticleRetrieval. ArticleFromFile.cs & ArticleFromList.cs are both examples of retrieving article text. Once the class has been created, simply replace "ArticleFromFile" in Program.cs with the newly created class name.
 
 ####Requirements
 * .Net 4.5
