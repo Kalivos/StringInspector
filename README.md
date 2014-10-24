@@ -19,5 +19,5 @@ Running the executable will search through all ".txt" files in the SampleArticle
 It is possible to change which articles are being fed into the program. The easiest was to do this is to create a class which impliments IArticleRetrieval. ArticleFromFile.cs & ArticleFromList.cs are both examples of retrieving article text. Once the class has been created, simply replace "ArticleFromFile" with the newly created class name.
 
 ####Requirements
-> .Net 4.5
-> A font capable of displaying all characters in the articles. If your current font can not display a character, it will show as a questionmark in the output.
+* .Net 4.5
+* A font capable of displaying all characters in the articles. If your current font can not display a character, it will show as a questionmark in the output.
