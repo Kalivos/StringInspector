@@ -15,16 +15,17 @@ namespace StringInspector
             ArticleFromList article = new ArticleFromList();
 
             Inspector inspect = null;
-            string next = String.Empty;
+            string next = article.GetNextArticle();
 
-            do
+            while (!String.IsNullOrWhiteSpace(next))
             {
-                next = article.GetNextArticle();
                 inspect = new Inspector(next);
                 Console.WriteLine("Most used character: " + inspect.GetMostUsed());
-            }
-            while (next.Length > 0);
 
+                next = article.GetNextArticle();
+            }
+
+            Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
     }
