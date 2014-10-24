@@ -8,7 +8,7 @@ namespace StringInspector
 {
     public class ArticleGatherer : IArticleRetrieval
     {
-        List<string> articles = new List<string>() { "κόσμε", "aabbccdb" };
+        private List<string> articles = new List<string>() { "κόσμε", "aabbccdb" };
 
         public string GetNextArticle()
         {
