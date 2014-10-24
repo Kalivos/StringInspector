@@ -13,7 +13,11 @@ Storage - The only things needing to be stored is 1) the string to parse & 2) th
 Efficiency - Is it more efficient to sort the list while counting characters vs sorting after all characters have been counted vs running through the list looking for the maximum after all frequencies have been determined (skipping the sort completely)? Max Hashtable size will be determined by distinct characters in article, which means that a sort may be overkill with the limited characters. My instinct is to not use any sorting, but to keep track of the most frequent character while counting.
 
 ####Running the program as-is
-TBD
+Running the executable will search through all ".txt" files in the SampleArticles folder. It will parse the articles text and display the most commonly used character. NOTE: To make things a little more interesting, whitespace is ignored and not calculated as a character. If whitespace is not ignored, a space will always be the most used character. If whitespace is desired, the boolean "_ignoreWhitespace" in the the Inspector class can be set to false.
 
 ####Modifying source input
-TBD
+It is possible to change which articles are being fed into the program. The easiest was to do this is to create a class which impliments IArticleRetrieval. ArticleFromFile.cs & ArticleFromList.cs are both examples of retrieving article text. Once the class has been created, simply replace "ArticleFromFile" with the newly created class name.
+
+####Requirements
+> .Net 4.5
+> A font capable of displaying all characters in the articles. If your current font can not display a character, it will show as a questionmark in the output.
