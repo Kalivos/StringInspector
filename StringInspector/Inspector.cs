@@ -54,6 +54,22 @@ namespace StringInspector
             return _mostUsed;
         }
 
+        public int GetNumberTimesUsed()
+        {
+            return GetNumberTimesUsed(_mostUsed);
+        }
+
+        public int GetNumberTimesUsed(Char character)
+        {
+            int frequency = 0;
+
+            //check if character is in dictionary prior to pulling value
+            if (character != '\0' && _frequency.ContainsKey(character))
+                frequency = _frequency[character];
+
+            return frequency;
+        }
+
         public override string ToString()
         {
             StringBuilder results = new StringBuilder();
