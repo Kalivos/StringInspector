@@ -38,7 +38,7 @@ namespace StringInspector
         /// Parses a string to find the number of times each character in the article is used
         /// </summary>
         /// <returns>Most used character</returns>
-        public Char Parse()
+        private Char Parse()
         {
             //loop though all the characters of the given text
             foreach (Char c in _text.ToString())
