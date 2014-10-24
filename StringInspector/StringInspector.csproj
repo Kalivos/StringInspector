@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArticleGatherer.cs" />
+    <Compile Include="ArticleFromList.cs" />
     <Compile Include="IArticleRetrieval.cs" />
     <Compile Include="Inspector.cs" />
     <Compile Include="Program.cs" />

@@ -12,7 +12,7 @@ namespace StringInspector
         {
             Console.OutputEncoding = Encoding.Unicode;
 
-            ArticleGatherer article = new ArticleGatherer();
+            ArticleFromList article = new ArticleFromList();
 
             Inspector inspect = null;
             string next = String.Empty;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StringInspector
 {
-    public class ArticleGatherer : IArticleRetrieval
+    public class ArticleFromList : IArticleRetrieval
     {
         private List<string> articles = new List<string>() { "κόσμε", "aabbccdb" };
 
